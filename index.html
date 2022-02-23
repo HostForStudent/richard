@@ -6,20 +6,23 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
    <link rel="stylesheet" href="css/style.min.css">
    <title>Richard</title>
 </head>
 
 <body class="body">
-   <div class="wrapper">
+   <div class="wrapper ">
 
-      <div data-goto=".body" class="top-arr"></div>
+      <div class="arrow-top-container _arrow-top _padding-lock">
+         <div data-goto=".body" class="top-arr"></div>
+      </div>
 
-      <header class="header">
+      <header class="header _padding-lock">
          <div class="container">
             <div class="header__row">
-               <div class="header__logo"><img src="icons/logo.png" alt="logo" class="header__logo-img"></div>
+               <div data-popup="._richard" class="header__logo"><img src="icons/logo.png" alt="logo"
+                     class="header__logo-img"></div>
                <div class="header__menu-icon">
                   <span></span>
                </div>
@@ -42,7 +45,7 @@
          <div class="container">
             <div class="hi__title">Momentum</div>
             <div class="hi__subtitle">Launch your product — and savor the momentum.</div>
-            <button class="hi__button button-hover button">Get the App</button>
+            <button data-popup="._get-the-app" class="hi__button button-hover button">Get the App</button>
             <div class="hi__bg"></div>
          </div>
          <button class="hi__arrow">
@@ -253,8 +256,8 @@
          <div class="question__block">
             <div class="question__text">Ready to get started?</div>
             <div class="question__inputs">
-               <button class="button-hover question__downloand">Download Now</button>
-               <button class="button-hover question__get">Get in Touch</button>
+               <button data-popup="._downloand" class="button-hover question__downloand">Download Now</button>
+               <button data-popup="._get-in-touch" class="button-hover question__get">Get in Touch</button>
             </div>
          </div>
       </section>
@@ -265,17 +268,17 @@
             <div class="form__subtitle">New course alerts, discounts and free lessons</div>
             <form action="#" class=" form__form">
                <input class="form__email" type="email" placeholder="Enter your email" name="email">
-               <input class="form__submit" type="submit" value="Subscribe">
+               <input data-popup="._from-richard" class="form__submit" type="submit" value="Subscribe">
             </form>
          </div>
       </section>
 
 
-      <section class="footer">
+      <footer class="footer">
          <div class="container">
 
-            <div class="footer__icon">
-               <img src="icons/footer-logo.png" alt="logo" class="footer__icon-img">
+            <div data-popup="._richard" class="footer__icon">
+               <img src="icons/footer-logo.png" alt="logo" class=" footer__icon-img">
             </div>
             <div class="footer__socials">
                <div class="footer__items">
@@ -290,11 +293,87 @@
                </div>
             </div>
          </div>
-      </section>
+      </footer>
 
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
       <script src="js/script.js"></script>
    </div>
+
+   <div class="popup _get-the-app ">
+      <div class="popup__wrapper">
+         <div class="popup__content">
+            <div class="popup__body">
+               <div data-exit="._get-the-app" class="popup__exit _exit-popup"><span>x</span></div>
+               <div class="popup__title title">Get the App</div>
+               <div class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptas!
+               </div>
+               <div data-exit="._get-the-app" class="popup__button button button-hover _exit-popup">Ok</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="popup _downloand ">
+      <div class="popup__wrapper">
+         <div class="popup__content">
+            <div class="popup__body">
+               <div data-exit="._downloand" class="popup__exit _exit-popup"><span>x</span></div>
+               <div class="popup__title title">Download</div>
+               <div class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptas!
+               </div>
+               <div data-exit="._downloand" class="popup__button button button-hover _exit-popup">Ok</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="popup _get-in-touch ">
+      <div class="popup__wrapper">
+         <div class="popup__content">
+            <div class="popup__body">
+               <div data-exit="._get-in-touch" class="popup__exit _exit-popup"><span>x</span></div>
+               <div class="popup__title title">Get in touch</div>
+               <div class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptas!
+               </div>
+               <div data-exit="._get-in-touch" class="popup__button button button-hover _exit-popup">Ok</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="popup _from-richard ">
+      <div class="popup__wrapper">
+         <div class="popup__content">
+            <div class="popup__body">
+               <div data-exit="._from-richard" class="popup__exit _exit-popup"><span>x</span></div>
+               <div class="popup__title title">Get updates from Richard</div>
+               <div class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, voluptas!
+               </div>
+               <div data-exit="._from-richard" class="popup__button button button-hover _exit-popup">Ok</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="popup _richard ">
+      <div class="popup__wrapper">
+         <div class="popup__content">
+            <div class="popup__body">
+               <div data-exit="._richard" class="popup__exit _exit-popup"><span>x</span></div>
+               <div class="popup__title title">Richard</div>
+               <div class="popup__text">Richard - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
+                  voluptas!</div>
+               <div data-exit="._richard" class="popup__button button button-hover _exit-popup">Ok</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   </div>
+
 </body>
 
 </html>
