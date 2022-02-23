@@ -76,14 +76,14 @@ if (isMobile.any()) {
    body.classList.add("_pc");
 }
 // swiper
-/* new Swiper('.swiper', {
+new Swiper('.swiper', {
    //булеты,текушая положения,прогресбар
    pagination: {
       el: ".swiper-pagination",
       //булеты
       clickable: true,
    },
-}); */
+});
 
 //popup
 const popupButtons = document.querySelectorAll("[data-popup]");
